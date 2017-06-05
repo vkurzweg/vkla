@@ -20,5 +20,6 @@ app.get('*.js', function (req, res, next) {
   res.set('Content-Encoding', 'gzip');
   next();
 });
+
 app.listen(port);
 console.log("Listening at http://localhost:" + port);
