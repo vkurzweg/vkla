@@ -1,0 +1,104 @@
+.main-image {
+  height: 225px;
+  width: 100%;
+  background-image: url('http://res.cloudinary.com/kurzweg/image/upload/v1496534237/palmtrees.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-image-mobile {
+  height: 225px;
+  width: 100%;
+  background-image: url('http://res.cloudinary.com/kurzweg/image/upload/v1496534237/palmtrees.png');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.second-image {
+  background-image: url('http://res.cloudinary.com/kurzweg/image/upload/v1496534243/weho.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding-top: 15%;
+}
+
+.second-image-mobile {
+  background-image: url('http://res.cloudinary.com/kurzweg/image/upload/v1496534243/weho.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 15%;
+}
+
+.resume-image {
+  height: 225px;
+  width: 100%;
+  background-image: url('/media/la_night.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.resume-image-mobile {
+  height: 225px;
+  width: 100%;
+  background-image: url('/media/la_night.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.contact-image {
+  height: 225px;
+  width: 100%;
+  background-image: url('/media/la_night2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-image-mobile {
+  height: 225px;
+  width: 100%;
+  background-image: url('/media/la_night2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.new {
+  font-weight: bold;
+  color: #FAFAFA;
+}
+
+.ant-modal {
+  width: 55%;
+}
+
+.ant-btn-primary {
+  background-color: #108EE9;
+}
+
+// Slider in Modals
+
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 200px;
+  line-height: 260px;
+  background: #212121;
+  color: #fff;
+  overflow: hidden;
+}
+
+// Stepper/Skills
+
+.steps-content {
+  min-height: 200px;
+  text-align: center;
+  padding-top: 2%;
+}
+
+.steps-action {
+  margin: 0 auto;
+  margin-top: 24px;
+  width: 100px;
+  padding-bottom: 3%;
+}
