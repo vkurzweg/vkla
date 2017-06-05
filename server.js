@@ -8,18 +8,18 @@ const index_path = __dirname + '/public/index.html';
 
 app.use(public_path);
 
-app.get('*.js', function (req, res, next) {
-  req.url = req.url + '.gz';
-  res.set('Content-Encoding', 'gzip');
-  next();
-});
-
 app.get('*', function (request, response) {
   response.sendFile(index_path, function (error) {
     if (error) {
       console.log(error);
     }
   });
+});
+
+app.get('*.js', function (req, res, next) {
+  req.url = req.url + '.gz';
+  res.set('Content-Encoding', 'gzip');
+  next();
 });
 
 app.listen(port);
