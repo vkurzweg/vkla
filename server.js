@@ -9,7 +9,7 @@ const index_path = __dirname + '/public/index.html';
 app.use(public_path);
 
 app.get('*', function (request, response) {
-  response.sendFile(index_path, function (error) {
+  response.sendFile(public_path, function (error) {
     if (error) {
       console.log(error);
     }
