@@ -9,18 +9,18 @@ const index_path = __dirname + '/public/index.html';
 app.use(public_path);
 
 app.get('*', function (request, response) {
-  response.sendFile(public_path, function (error) {
+  response.sendFile(index_path, function (error) {
     if (error) {
       console.log(error);
     }
   });
 });
 
-app.get('*.js', function (req, res, next) {
-  req.url = req.url + '.gz';
-  res.set('Content-Encoding', 'gzip');
-  next();
-});
+// app.get('*.js', function (req, res, next) {
+//   req.url = req.url + '.gz';
+//   res.set('Content-Encoding', 'gzip');
+//   next();
+// });
 
 app.listen(port);
 console.log("Listening at http://localhost:" + port);
