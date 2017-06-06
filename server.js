@@ -16,6 +16,11 @@ app.get('*', function (request, response) {
   });
 });
 
+app.get('*.css', function(req, res, next) {
+  res.set('Content-Type', 'text/css' );
+  next();
+})
+
 app.get('*.js', function (req, res, next) {
   req.url = req.url + '.gz';
   res.set('Content-Encoding', 'gzip');
